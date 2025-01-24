@@ -90,7 +90,7 @@ func main() {
 	t := os.Getenv("NAMDoSMAXPROCS")
 	maxproc, err := strconv.Atoi(t)
 	if err != nil {
-		maxproc = 4096
+		maxproc = 40960
 	}
 
 	u, err := url.Parse(site)
